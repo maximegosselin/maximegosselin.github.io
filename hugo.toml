@@ -1,0 +1,31 @@
+baseURL = 'https://maximegosselin.github.io/'
+languageCode = 'en-us'
+title = 'maximegosselin.com'
+theme = 'PaperMod'
+
+[params]
+  author = 'Maxime Gosselin'
+  description = "Maxime Gosselin's blog"
+  defaultTheme = 'auto'
+  ShowReadingTime = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+
+[menu]
+  [[menu.main]]
+    name = 'Posts'
+    url = '/posts/'
+    weight = 1
+  [[menu.main]]
+    name = 'Tags'
+    url = '/tags/'
+    weight = 2
+  [[menu.main]]
+    name = 'LinkedIn'
+    url = 'https://www.linkedin.com/in/maximegosselin'
+    weight = 3
+  [[menu.main]]
+    name = 'GitHub'
+    url = 'https://github.com/maximegosselin'
+    weight = 4
