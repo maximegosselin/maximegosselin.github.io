@@ -1,11 +1,11 @@
-baseURL = 'https://maximegosselin.github.io/'
+baseURL = 'https://maximegosselin.com/'
 languageCode = 'en-us'
 title = 'maximegosselin.com'
 theme = 'PaperMod'
 
 [params]
   author = 'Maxime Gosselin'
-  description = "Maxime Gosselin's blog"
+  description = "Notes on PHP, event sourcing and software architecture."
   defaultTheme = 'auto'
   ShowReadingTime = true
   ShowPostNavLinks = true

@@ -1,4 +1,21 @@
+# IDEs
 .idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Claude
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Hugo
 public/
 resources/
 .hugo_build.lock
+
+# Node (if used for asset pipeline)
+node_modules/
