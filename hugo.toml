@@ -1,11 +1,11 @@
 baseURL = 'https://maximegosselin.com/'
 languageCode = 'en-us'
-title = "Undefined Index"
+title = "Maxime Gosselin"
 theme = 'PaperMod'
 
 [params]
   author = 'Maxime Gosselin'
-  description = "Notes on PHP, event sourcing and software architecture."
+  description = "Notes on PHP, event sourcing and software architecture by Maxime Gosselin."
   defaultTheme = 'auto'
   ShowReadingTime = true
   ShowPostNavLinks = true
