@@ -1,8 +1,8 @@
-+++
-date = '2026-02-25T07:30:29-05:00'
-title = 'Implementing a DCB-Compliant Event Store in SQLite'
-tags = ['Event Sourcing', 'DCB']
-+++
+---
+date: '2026-02-25T00:00:00-05:00'
+title: 'Implementing a DCB-Compliant Event Store in SQLite'
+tags: ['Event Sourcing', 'DCB']
+---
 
 Dynamic Consistency Boundary doesn't require specialized infrastructure. A four-column SQLite table is enough.
 
