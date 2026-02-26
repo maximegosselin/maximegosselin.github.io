@@ -1,0 +1,1 @@
+Notes on PHP, event sourcing, software architecture and other obsessions by Maxime Gosselin.
