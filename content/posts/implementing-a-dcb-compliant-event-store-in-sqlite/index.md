@@ -1,7 +1,7 @@
 ---
 date: '2026-02-25T00:00:00-05:00'
 title: 'Implementing a DCB-Compliant Event Store in SQLite'
-description: 'Learn how to implement a DCB-compliant Event Store using a four-column SQLite table and a conditional INSERT.'
+description: 'A four-column table and a conditional INSERT. No specialized infrastructure required.'
 tags: ['Event Sourcing', 'DCB']
 ---
 

@@ -1,7 +1,7 @@
 ---
 date: '2026-02-20T00:00:00-05:00'
 title: 'Backslash: Event Sourcing in PHP, Built for the Real World'
-description: 'The story behind Backslash — a PHP Event Sourcing library built for the real world.'
+description: 'An open-source PHP library for event sourcing without complexity, with a runnable demo application.'
 tags: [ 'PHP', 'Event Sourcing', 'DCB' ]
 ---
 
