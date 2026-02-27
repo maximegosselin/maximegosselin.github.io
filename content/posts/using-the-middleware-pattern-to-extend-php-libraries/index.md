@@ -1,6 +1,6 @@
 ---
 date: '2026-02-27T00:00:00-05:00'
-title: 'Stop Using Decorators to Extend Your PHP Libraries. Use Middleware Instead.'
+title: 'Using the Middleware Pattern to Extend PHP Libraries'
 description: 'How to apply the PSR-15 middleware pattern to any PHP library component, as an alternative to the Decorator pattern.'
 tags: ['PHP', 'Software Architecture']
 ---
