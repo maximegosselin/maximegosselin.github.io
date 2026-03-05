@@ -11,6 +11,7 @@ theme = 'PaperMod'
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
+  comments = true
 
 [menu]
   [[menu.main]]
