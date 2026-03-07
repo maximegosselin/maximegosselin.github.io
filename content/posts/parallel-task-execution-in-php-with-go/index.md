@@ -1,6 +1,6 @@
 ---
 title: "Parallel Task Execution in PHP... with Go"
-date: 2026-03-08
+date: 2026-03-07
 description: "PHP is a blocking language, and that is fine. Instead of fighting it with complex libraries, Gyproc delegates parallelism to Go and streams each command's output back as tagged JSON events."
 tags: ['PHP', 'Go']
 ---
