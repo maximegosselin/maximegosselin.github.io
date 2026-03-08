@@ -119,24 +119,6 @@ class PdoProxy implements PdoInterface
         return new self(fn () => PDO::connect($dsn, $username, $password, $options));
     }
 
-    private function getInstance(): PDO
-    {
-        if ($this->resolved) {
-            return $this->pdo;
-        }
-
-        $object = ($this->resolver)();
-
-        if (!$object instanceof PDO) {
-            throw new RuntimeException('The callable did not return a PDO instance.');
-        }
-
-        $this->pdo = $object;
-        $this->resolved = true;
-
-        return $this->pdo;
-    }
-
     public function beginTransaction(): bool
     {
         return $this->getInstance()->beginTransaction();
@@ -158,6 +140,24 @@ class PdoProxy implements PdoInterface
     }
 
     // ... remaining methods follow the same pattern
+
+    private function getInstance(): PDO
+    {
+        if ($this->resolved) {
+            return $this->pdo;
+        }
+
+        $object = ($this->resolver)();
+
+        if (!$object instanceof PDO) {
+            throw new RuntimeException('The callable did not return a PDO instance.');
+        }
+
+        $this->pdo = $object;
+        $this->resolved = true;
+
+        return $this->pdo;
+    }
 }
 ```
 
