@@ -67,14 +67,13 @@ All of these solutions point to the same need. Here is what a minimal standard i
 
 ## A Minimal Interface
 
-The proposed interface is deliberately minimal. It is a faithful mirror of PDO's public API, with one addition: a `getInstance()` method that returns the underlying `PDO` instance for the rare cases where a third-party library requires a concrete `PDO` object.
+The proposed interface is deliberately minimal. It is a faithful mirror of PDO's public API.
 
 ```php
 interface PdoInterface
 {
     public static function connect(string $dsn, ?string $username = null, ?string $password = null, ?array $options = null): PdoInterface;
     public static function getAvailableDrivers(): array;
-    public function getInstance(): PDO;
     public function beginTransaction(): bool;
     public function commit(): bool;
     public function errorCode(): ?string;
@@ -120,7 +119,7 @@ class PdoProxy implements PdoInterface
         return new self(fn () => PDO::connect($dsn, $username, $password, $options));
     }
 
-    public function getInstance(): PDO
+    private function getInstance(): PDO
     {
         if ($this->resolved) {
             return $this->pdo;
