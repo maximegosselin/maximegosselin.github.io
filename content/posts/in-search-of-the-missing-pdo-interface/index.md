@@ -5,6 +5,8 @@ description: 'Why PDO has no interface after twenty years, how the ecosystem has
 tags: ['PHP', 'Software Architecture']
 ---
 
+**Update:** This post led to a follow-up. Read [Proposing a PSR for PDO Providers](/posts/proposing-a-psr-for-pdo-providers/) for a more accurate framing of the problem and a concrete proposal.
+
 PHP's PDO extension has been the standard database abstraction layer since PHP 5.1. It does its job well: it provides a unified API over multiple database drivers and handles the low-level details of connecting, querying, and fetching results. Yet, after nearly two decades, PDO is still missing something fundamental: an interface.
 
 This might seem like a minor inconvenience, but the consequences ripple across the PHP ecosystem in ways that are worth examining. This post explores the gap, the workarounds the community has invented to fill it, and what a minimal standard interface could look like.
