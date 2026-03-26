@@ -11,7 +11,7 @@ I am not a spiritual person. But I have always been struck by what that prayer a
 
 It is a reset. A deliberate, collective reset. A way to remove our blinders and truly listen to one another.
 
-That kind of reset was rare early in my career as a software architect. Everyone came with their own assumptions. And nobody set them aside long enough to truly listen.
+That kind of reset is rare in most software and modeling projects I have worked on. Everyone comes with their own assumptions. And nobody sets them aside long enough to hear one another.
 
 ## Technology blinds us
 
