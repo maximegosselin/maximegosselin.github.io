@@ -15,7 +15,7 @@ Back in February I wrote about [implementing a DCB-compliant event store in SQLi
 
 The instinct, once you decide to build a server instead of a library, is to reach for Postgres or MySQL. Or, if you're feeling like a god that day, to invent your own proprietary storage format. I went the other way.
 
-TamarackDB targets applications with modest throughput and few concurrent writers, not internet-scale traffic. At that scope, several million rows with a `name + value` btree index is well inside what SQLite handles comfortably. Beyond volume, three things made SQLite the better fit, not just an acceptable one:
+TamarackDB targets applications with modest throughput, not internet-scale traffic. At that scope, several million rows with a `name + value` btree index is well inside what SQLite handles comfortably. Beyond volume, three things made SQLite the better fit, not just an acceptable one:
 
 - **No external dependency.** No separate database process to run, patch, and monitor next to the event store itself. State stays where the Go process already is.
 - **Single-writer by design.** TamarackDB only ever has one process writing, by design. SQLite's own single-writer model matches that instead of fighting it.
