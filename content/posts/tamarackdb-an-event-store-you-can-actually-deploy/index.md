@@ -5,6 +5,8 @@ description: 'A standalone, DCB-compliant event store. Written in Go, backed by 
 tags: ['Event Sourcing', 'DCB']
 ---
 
+![TamarackDB logo](tamarackdb-logo.png)
+
 Back in February I wrote about [implementing a DCB-compliant event store in SQLite](https://maximegosselin.com/posts/implementing-a-dcb-compliant-event-store-in-sqlite/): a four-column table, a few indexes, and SQLite's own file lock doing the heavy lifting on consistency. It worked, but it had one obvious limit: SQLite is embedded, so the technique only helped the one process holding the file open.
 
 [TamarackDB](https://github.com/tamarackdb/tamarackdb) is that idea turned into something you can actually run. It's a standalone event store: written in Go, reachable over HTTP, backed by SQLite. It follows the [DCB specification](https://dcb.events/specification/), but works just as well for plain old aggregates. Not a library you import into your app. A small service that sits next to your apps and holds their events.
